@@ -1,0 +1,7 @@
+"DecalModulate"
+{
+	"$basetexture" "rin/lrpd2/props/jetstream"
+	"$model" "1"
+	"$nocull" "1"
+}
+

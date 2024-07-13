@@ -23,7 +23,7 @@ VEHICLE.Equipment = {
 				}
 			},
 			{
-				Option = "K-9",
+				Option = "K-9 Unit Miku",
 				SubMaterials = {
 					{ Id = 21, Material = "rin/lrpd2/tahoe19/k9" }
 				}
@@ -288,14 +288,105 @@ VEHICLE.Equipment = {
 			}
 		}
 	},
-	{
-		Category = "Bone Category",
+    {
+		Category = "Wheels",
 		Options = {
+			{
+				Option = "18' ALY5646",
+				Props = {
+				  {
+				  Model = "models/supermighty/mesh/wheel/tahoe_wheel.mdl",
+				  Position = Vector( 0, 0, 0 ),
+				  Angles = Angle( 0, 0, 0 ),
+				  Scale = 1,
+				  Bones = {
+					  ["rim"] = { 
+						  Position = Vector( 0, 0, 0 ),
+						  Angles = Angle( 0, 0, 0 ),
+						  Scale = 1,
+						  Follow = { Attachment = "wheel_fl" }
+					  },
+				  }
+				  },
+				  {
+					  Model = "models/supermighty/mesh/wheel/tahoe_wheel.mdl",
+					  Position = Vector( 0, 0, 0 ),
+					  Angles = Angle( 0, 0, 0 ),
+					  Scale = 1,
+					  Bones = {
+						  ["rim"] = { 
+							  Position = Vector( 0, 0, 0 ),
+							  Angles = Angle( 0, 0, 0 ),
+							  Scale = 1,
+							  Follow = { Attachment = "wheel_fr" }
+						  },
+					  }
+				  },
+				  {
+					  Model = "models/supermighty/mesh/wheel/tahoe_wheel.mdl",
+					  Position = Vector( 0, 0, 0 ),
+					  Angles = Angle( 0, 0, 0 ),
+					  Scale = 1,
+					  Bones = {
+						  ["rim"] = { 
+							  Position = Vector( 0, 0, 0 ),
+							  Angles = Angle( 0, 0, 0 ),
+							  Scale = 1,
+							  Follow = { Attachment = "wheel_rr" }
+						  },
+					  }
+				  },
+				  {
+					  Model = "models/supermighty/mesh/wheel/tahoe_wheel.mdl",
+					  Position = Vector( 0, 0, 0 ),
+					  Angles = Angle( 0, 0, 0 ),
+					  Scale = 1,
+					  Bones = {
+						  ["rim"] = { 
+							  Position = Vector( 0, 0, 0 ),
+							  Angles = Angle( 0, 0, 0 ),
+							  Scale = 1,
+							  Follow = { Attachment = "wheel_rl" }
+						  },
+					  }
+				  },
+				},
+				Bones = {
+				   {
+					  Bone = "fl_wheel",
+					  Position = Vector(-1.75, 0, 0),
+					  Angles = Angle(0, 0, 0),
+					  -- Makes the front-left wheel 2x normal size
+					  Scale = 0
+				   },
+				   {
+					  Bone = "fr_wheel",
+					  Position = Vector(-1.75, 0, 0),
+					  Angles = Angle(0, 0, 0),
+					  -- Makes the front-left wheel 2x normal size
+					  Scale = 0
+				   },
+				   {
+					  Bone = "br_wheel",
+					  Position = Vector(-1.75, 0, 0),
+					  Angles = Angle(0, 0, 0),
+					  -- Makes the front-left wheel 2x normal size
+					  Scale = 0
+				   },
+				   {
+					  Bone = "bl_wheel",
+					  Position = Vector(-1.75, 0, 0),
+					  Angles = Angle(0, 0, 0),
+					  -- Makes the front-left wheel 2x normal size
+					  Scale = 0
+				   },
+				}
+			 },
 		   {
-			  Option = "Civ Wheel",
+			  Option = "20' ALY5657",
 			  Props = {
 				{
-				Model = "models/supermighty/mesh/wheel/tahoe_wheel.mdl",
+				Model = "models/supermighty/mesh/wheel/tahoe_wheel2.mdl",
 				Position = Vector( 0, 0, 0 ),
 				Angles = Angle( 0, 0, 0 ),
 				Scale = 1,
@@ -309,7 +400,7 @@ VEHICLE.Equipment = {
 				}
 				},
 				{
-					Model = "models/supermighty/mesh/wheel/tahoe_wheel.mdl",
+					Model = "models/supermighty/mesh/wheel/tahoe_wheel2.mdl",
 					Position = Vector( 0, 0, 0 ),
 					Angles = Angle( 0, 0, 0 ),
 					Scale = 1,
@@ -323,7 +414,7 @@ VEHICLE.Equipment = {
 					}
 				},
 				{
-					Model = "models/supermighty/mesh/wheel/tahoe_wheel.mdl",
+					Model = "models/supermighty/mesh/wheel/tahoe_wheel2.mdl",
 					Position = Vector( 0, 0, 0 ),
 					Angles = Angle( 0, 0, 0 ),
 					Scale = 1,
@@ -337,7 +428,7 @@ VEHICLE.Equipment = {
 					}
 				},
 				{
-					Model = "models/supermighty/mesh/wheel/tahoe_wheel.mdl",
+					Model = "models/supermighty/mesh/wheel/tahoe_wheel2.mdl",
 					Position = Vector( 0, 0, 0 ),
 					Angles = Angle( 0, 0, 0 ),
 					Scale = 1,
@@ -381,7 +472,315 @@ VEHICLE.Equipment = {
 					Scale = 0
 				 },
 			  }
-		   }
+		   },
+		   {
+			Option = "20' ALY5652U80HH",
+			Props = {
+			  {
+			  Model = "models/supermighty/mesh/wheel/tahoe_wheel3.mdl",
+			  Position = Vector( 0, 0, 0 ),
+			  Angles = Angle( 0, 0, 0 ),
+			  Scale = 1,
+			  Bones = {
+				  ["rim"] = { 
+					  Position = Vector( 0, 0, 0 ),
+					  Angles = Angle( 0, 0, 0 ),
+					  Scale = 1,
+					  Follow = { Attachment = "wheel_fl" }
+				  },
+			  }
+			  },
+			  {
+				  Model = "models/supermighty/mesh/wheel/tahoe_wheel3.mdl",
+				  Position = Vector( 0, 0, 0 ),
+				  Angles = Angle( 0, 0, 0 ),
+				  Scale = 1,
+				  Bones = {
+					  ["rim"] = { 
+						  Position = Vector( 0, 0, 0 ),
+						  Angles = Angle( 0, 0, 0 ),
+						  Scale = 1,
+						  Follow = { Attachment = "wheel_fr" }
+					  },
+				  }
+			  },
+			  {
+				  Model = "models/supermighty/mesh/wheel/tahoe_wheel3.mdl",
+				  Position = Vector( 0, 0, 0 ),
+				  Angles = Angle( 0, 0, 0 ),
+				  Scale = 1,
+				  Bones = {
+					  ["rim"] = { 
+						  Position = Vector( 0, 0, 0 ),
+						  Angles = Angle( 0, 0, 0 ),
+						  Scale = 1,
+						  Follow = { Attachment = "wheel_rr" }
+					  },
+				  }
+			  },
+			  {
+				  Model = "models/supermighty/mesh/wheel/tahoe_wheel3.mdl",
+				  Position = Vector( 0, 0, 0 ),
+				  Angles = Angle( 0, 0, 0 ),
+				  Scale = 1,
+				  Bones = {
+					  ["rim"] = { 
+						  Position = Vector( 0, 0, 0 ),
+						  Angles = Angle( 0, 0, 0 ),
+						  Scale = 1,
+						  Follow = { Attachment = "wheel_rl" }
+					  },
+				  }
+			  },
+			},
+			Bones = {
+			   {
+				  Bone = "fl_wheel",
+				  Position = Vector(-1.75, 0, 0),
+				  Angles = Angle(0, 0, 0),
+				  -- Makes the front-left wheel 2x normal size
+				  Scale = 0
+			   },
+			   {
+				  Bone = "fr_wheel",
+				  Position = Vector(-1.75, 0, 0),
+				  Angles = Angle(0, 0, 0),
+				  -- Makes the front-left wheel 2x normal size
+				  Scale = 0
+			   },
+			   {
+				  Bone = "br_wheel",
+				  Position = Vector(-1.75, 0, 0),
+				  Angles = Angle(0, 0, 0),
+				  -- Makes the front-left wheel 2x normal size
+				  Scale = 0
+			   },
+			   {
+				  Bone = "bl_wheel",
+				  Position = Vector(-1.75, 0, 0),
+				  Angles = Angle(0, 0, 0),
+				  -- Makes the front-left wheel 2x normal size
+				  Scale = 0
+			   },
+			}
+		 },
+		 {
+			Option = "17' ALY5647U79",
+			Props = {
+			  {
+			  Model = "models/supermighty/mesh/wheel/tahoe_wheel4.mdl",
+			  Position = Vector( 0, 0, 0 ),
+			  Angles = Angle( 0, 0, 0 ),
+			  Scale = 1,
+			  Bones = {
+				  ["rim"] = { 
+					  Position = Vector( 0, 0, 0 ),
+					  Angles = Angle( 0, 0, 0 ),
+					  Scale = 1,
+					  Follow = { Attachment = "wheel_fl" }
+				  },
+			  }
+			  },
+			  {
+				  Model = "models/supermighty/mesh/wheel/tahoe_wheel4.mdl",
+				  Position = Vector( 0, 0, 0 ),
+				  Angles = Angle( 0, 0, 0 ),
+				  Scale = 1,
+				  Bones = {
+					  ["rim"] = { 
+						  Position = Vector( 0, 0, 0 ),
+						  Angles = Angle( 0, 0, 0 ),
+						  Scale = 1,
+						  Follow = { Attachment = "wheel_fr" }
+					  },
+				  }
+			  },
+			  {
+				  Model = "models/supermighty/mesh/wheel/tahoe_wheel4.mdl",
+				  Position = Vector( 0, 0, 0 ),
+				  Angles = Angle( 0, 0, 0 ),
+				  Scale = 1,
+				  Bones = {
+					  ["rim"] = { 
+						  Position = Vector( 0, 0, 0 ),
+						  Angles = Angle( 0, 0, 0 ),
+						  Scale = 1,
+						  Follow = { Attachment = "wheel_rr" }
+					  },
+				  }
+			  },
+			  {
+				  Model = "models/supermighty/mesh/wheel/tahoe_wheel4.mdl",
+				  Position = Vector( 0, 0, 0 ),
+				  Angles = Angle( 0, 0, 0 ),
+				  Scale = 1,
+				  Bones = {
+					  ["rim"] = { 
+						  Position = Vector( 0, 0, 0 ),
+						  Angles = Angle( 0, 0, 0 ),
+						  Scale = 1,
+						  Follow = { Attachment = "wheel_rl" }
+					  },
+				  }
+			  },
+			},
+			Bones = {
+			   {
+				  Bone = "fl_wheel",
+				  Position = Vector(-1.75, 0, 0),
+				  Angles = Angle(0, 0, 0),
+				  -- Makes the front-left wheel 2x normal size
+				  Scale = 0
+			   },
+			   {
+				  Bone = "fr_wheel",
+				  Position = Vector(-1.75, 0, 0),
+				  Angles = Angle(0, 0, 0),
+				  -- Makes the front-left wheel 2x normal size
+				  Scale = 0
+			   },
+			   {
+				  Bone = "br_wheel",
+				  Position = Vector(-1.75, 0, 0),
+				  Angles = Angle(0, 0, 0),
+				  -- Makes the front-left wheel 2x normal size
+				  Scale = 0
+			   },
+			   {
+				  Bone = "bl_wheel",
+				  Position = Vector(-1.75, 0, 0),
+				  Angles = Angle(0, 0, 0),
+				  -- Makes the front-left wheel 2x normal size
+				  Scale = 0
+			   },
+			}
+		 },
+		 {
+			Option = "18' SSV",
+			Props = {
+			  {
+			  Model = "models/supermighty/mesh/wheel/tahoe_ssv_wheel.mdl",
+			  Position = Vector( 0, 0, 0 ),
+			  Angles = Angle( 0, 0, 0 ),
+			  Scale = 1,
+			  Bones = {
+				  ["rim"] = { 
+					  Position = Vector( 0, 0, 0 ),
+					  Angles = Angle( 0, 0, 0 ),
+					  Scale = 1,
+					  Follow = { Attachment = "wheel_fl" }
+				  },
+			  }
+			  },
+			  {
+				  Model = "models/supermighty/mesh/wheel/tahoe_ssv_wheel.mdl",
+				  Position = Vector( 0, 0, 0 ),
+				  Angles = Angle( 0, 0, 0 ),
+				  Scale = 1,
+				  Bones = {
+					  ["rim"] = { 
+						  Position = Vector( 0, 0, 0 ),
+						  Angles = Angle( 0, 0, 0 ),
+						  Scale = 1,
+						  Follow = { Attachment = "wheel_fr" }
+					  },
+				  }
+			  },
+			  {
+				  Model = "models/supermighty/mesh/wheel/tahoe_ssv_wheel.mdl",
+				  Position = Vector( 0, 0, 0 ),
+				  Angles = Angle( 0, 0, 0 ),
+				  Scale = 1,
+				  Bones = {
+					  ["rim"] = { 
+						  Position = Vector( 0, 0, 0 ),
+						  Angles = Angle( 0, 0, 0 ),
+						  Scale = 1,
+						  Follow = { Attachment = "wheel_rr" }
+					  },
+				  }
+			  },
+			  {
+				  Model = "models/supermighty/mesh/wheel/tahoe_ssv_wheel.mdl",
+				  Position = Vector( 0, 0, 0 ),
+				  Angles = Angle( 0, 0, 0 ),
+				  Scale = 1,
+				  Bones = {
+					  ["rim"] = { 
+						  Position = Vector( 0, 0, 0 ),
+						  Angles = Angle( 0, 0, 0 ),
+						  Scale = 1,
+						  Follow = { Attachment = "wheel_rl" }
+					  },
+				  }
+			  },
+			},
+			Bones = {
+			   {
+				  Bone = "fl_wheel",
+				  Position = Vector(-1.75, 0, 0),
+				  Angles = Angle(0, 0, 0),
+				  -- Makes the front-left wheel 2x normal size
+				  Scale = 0
+			   },
+			   {
+				  Bone = "fr_wheel",
+				  Position = Vector(-1.75, 0, 0),
+				  Angles = Angle(0, 0, 0),
+				  -- Makes the front-left wheel 2x normal size
+				  Scale = 0
+			   },
+			   {
+				  Bone = "br_wheel",
+				  Position = Vector(-1.75, 0, 0),
+				  Angles = Angle(0, 0, 0),
+				  -- Makes the front-left wheel 2x normal size
+				  Scale = 0
+			   },
+			   {
+				  Bone = "bl_wheel",
+				  Position = Vector(-1.75, 0, 0),
+				  Angles = Angle(0, 0, 0),
+				  -- Makes the front-left wheel 2x normal size
+				  Scale = 0
+			   },
+			}
+		 },
+		   	{
+			Option = "18' PPV",
+			Props = {
+			},
+			Bones = {
+				{
+				   Bone = "fl_wheel",
+				   Position = Vector(-0, 0, 0),
+				   Angles = Angle(0, 0, 0),
+				   -- Makes the front-left wheel 2x normal size
+				   Scale = 1
+				},
+				{
+				   Bone = "fr_wheel",
+				   Position = Vector(-0, 0, 0),
+				   Angles = Angle(0, 0, 0),
+				   -- Makes the front-left wheel 2x normal size
+				   Scale = 1
+				},
+				{
+				   Bone = "br_wheel",
+				   Position = Vector(0, 0, 0),
+				   Angles = Angle(0, 0, 0),
+				   -- Makes the front-left wheel 2x normal size
+				   Scale = 1
+				},
+				{
+				   Bone = "bl_wheel",
+				   Position = Vector(0, 0, 0),
+				   Angles = Angle(0, 0, 0),
+				   -- Makes the front-left wheel 2x normal size
+				   Scale = 1
+				},
+			 }
+		 },
 		}
 	},
 	{

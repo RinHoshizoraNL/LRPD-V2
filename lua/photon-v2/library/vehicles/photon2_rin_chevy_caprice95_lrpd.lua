@@ -218,13 +218,15 @@ VEHICLE.Equipment = {
 						Model = "models/supermighty/photon/dashcam.mdl",
 						Position = Vector( 7.5, 15, 51),
 						Angles = Angle( 0, 270, 0 ),
-						Scale = 1
+						Scale = 1,
+						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 					{
 						Model = "models/sentry/props/setina_partition_cvpi.mdl",
 						Position = Vector( 0, 0, -5),
 						Angles = Angle( 0, 0, 0 ),
-						Scale = 1
+						Scale = 1,
+						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 					{
 						Model = "models/supermighty/photon/front_holder.mdl",

@@ -158,7 +158,7 @@ VEHICLE.Equipment = {
 					{ BodyGroup = "reartrim", Value = 1 },
 					{ BodyGroup = "handles", Value = 1 },
 					{ BodyGroup = "trunkmodel", Value = 1 },
-					{ BodyGroup = "mirrors", Value = 1 },
+					{ BodyGroup = "mirrors", Value = 0 },
 					{ BodyGroup = "bumperf_chrome", Value = 2 },
 					{ BodyGroup = "bumperr_chrome", Value = 1 },
 				},

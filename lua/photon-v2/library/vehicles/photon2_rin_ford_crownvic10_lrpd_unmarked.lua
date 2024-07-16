@@ -9,7 +9,7 @@ VEHICLE.Author		= "Rin Hoshizora"
 local sequence = Photon2.SequenceBuilder.New
 
 VEHICLE.Equipment = {
-        {
+    {
 		Category = "Paint",
 		Options = {
             {

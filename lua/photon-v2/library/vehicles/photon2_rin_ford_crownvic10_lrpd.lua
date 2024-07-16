@@ -331,6 +331,11 @@ VEHICLE.Equipment = {
 									Corner = "RESPONSE",
 								}
 							},
+							["Emergency.Directional"] = {
+								["LEFT"] = {},
+								["RIGHT"] = {},
+								["CENOUT"] = {},
+							},
 							["Vehicle.Transmission"] = {
 		                        ["PARK"] = {
 			                        Inner = "CRUISE",
@@ -356,7 +361,7 @@ VEHICLE.Equipment = {
 			},
 		}
 	},
-	{
+    {
 		Category = "Interior Lighting",
 		Options = {
             {
@@ -501,6 +506,13 @@ VEHICLE.Equipment = {
 						Position = Vector( -0.2, 12.75, 28 ),
 						Angles = Angle( -69, 270, 0 ),
 						Scale = 1.1,
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Model = "models/sentry/props/sap500.mdl",
+						Position = Vector( 0, 7.4, 26.2 ),
+						Angles = Angle( 0, 0, -69 ),
+						Scale = 1,
 						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 					{

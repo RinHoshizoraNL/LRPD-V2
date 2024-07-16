@@ -223,10 +223,31 @@ VEHICLE.Equipment = {
 		}
 	},
 	{
-		Category = "Interior Lighting",
+		Category = "Visor Light",
+		Options = {
+			{
+				Option = "Spectralux ILS",
+				Components = {
+					{
+						Component = "photon_fedsig_ils",
+						Position = Vector( 0, 12.5, 61 ),
+						Angles = Angle( 0, 90, 0 ),
+						Scale = 1.1,
+						StateMap = "[B] 3 4 5 6 7 8 [W] 1 2 ",
+						Options = {
+							Width = 3,
+							Angle = 10
+						}
+					}
+				}
+			},
+		}
+	},
+	{
+		Category = "Rear Deck Lighting", --MAY REPLACE WITH DUO, NOT SURE YET
 		Options = {
             {
-				Option = "FS MB1",
+				Option = "FS Xstream",
 				Components = {
 					{
 						Name = "@xtream_single",
@@ -282,6 +303,66 @@ VEHICLE.Equipment = {
 
 		}
 	},
+	{
+		Category = "Grille Lighting",
+		Options = {
+            {
+				Option = "FS Xstream", --TEMPORARY ONLY, WILL REPLACE WITH LP3 OR LP5's 
+				Components = {
+					{
+						Name = "@xtream_grille",
+						Component = "photon_fedsig_xstream_single",
+						Position = Vector( -8.5, 108, 31.5 ),
+						Angles = Angle( 0, 93, 178.5 ),
+						Scale = 1,
+						StateMap = "[B] 1",
+						BodyGroups = {
+							["shroud"] = 1,
+							["mount"] = 2,
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+						Segments = {
+							Light = {
+								Frames = {
+								    [1] = "1", 
+								},
+								Sequences = {
+									["QUAD_FLASH"] = sequence():QuadFlash( 1, 0 ),
+									["DOUBLE_FLASH"] = sequence():DoubleFlash( 1, 0 ),
+									["SCENE"] = { 1, 1, 1, 1, 0, 0, 0, 0 },
+								}
+							},
+						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {
+									Light = "SCENE",
+								},
+								["MODE2"] = {
+									Light = "DOUBLE_FLASH",
+								},
+								["MODE3"] = {
+									Light = "QUAD_FLASH",
+								}
+							},
+							["Vehicle.Transmission"] = {
+		                        ["PARK"] = {
+			                        Light = "SCENE",
+		                        },
+	                        },
+						},
+					},
+					{
+						Inherit = "@xtream_grille",
+						Position = Vector( 8.5, 108, 31.5 ),
+						Angles = Angle( 0, 87, 182.5 ),
+						Phase = 180,
+					}
+				},
+			},
+
+		}
+	},
     {
 		Category = "Police Equipment",
 		Options = {
@@ -318,8 +399,15 @@ VEHICLE.Equipment = {
 						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 					{
+						Model = "models/sentry/props/sap500.mdl",
+						Position = Vector( 0, 7.4, 26.2 ),
+						Angles = Angle( 0, 0, -69 ),
+						Scale = 1,
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
 						Model = "models/sentry/props/jp/dashcam.mdl",
-						Position = Vector( 7, 15, 62 ),
+						Position = Vector( 3, 16, 61.6 ),
 						Angles = Angle( 8, 264.8, 0 ),
 						Scale = 1,
 						RenderGroup = RENDERGROUP_OPAQUE,

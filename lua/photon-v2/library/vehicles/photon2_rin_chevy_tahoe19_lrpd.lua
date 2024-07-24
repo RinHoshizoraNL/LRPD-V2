@@ -889,27 +889,21 @@ VEHICLE.Equipment = {
 						FollowBone = "trunk",
 					},
 					{
-						Model = "models/xenosprops/jp_plate/jp_plate.mdl",
-						Position = Vector( 0, -123.15, 47 ),
+						Model = "models/xenosprops/na_plate/na_plate_gov.mdl",
+						Position = Vector( 0, -123.2, 47 ),
 						Angles = Angle( 0, 270, 00 ),
-						Scale = 0.95,
-						BodyGroups = {
-							["rear_seal"] = 0,
-						},
+						Scale = 1.02,
 						SubMaterials = {
-							[0] = "rin/lrpd2/props/plate_police",
+							[1] = "rin/lrpd2/props/plate_police",
 						},
 					},
 					{
-						Model = "models/xenosprops/jp_plate/jp_plate.mdl",
-						Position = Vector( 0, 123.7, 22 ),
+						Model = "models/xenosprops/na_plate/na_plate_gov.mdl",
+						Position = Vector( 0, 123.6, 22.1 ),
 						Angles = Angle( 4, 90, 0 ),
-						Scale = 0.95,
-						BodyGroups = {
-							["rear_seal"] = 0,
-						},
+						Scale = 1.02,
 						SubMaterials = {
-							[0] = "rin/lrpd2/props/plate_police",
+							[1] = "rin/lrpd2/props/plate_police",
 						},
 					},
 				}

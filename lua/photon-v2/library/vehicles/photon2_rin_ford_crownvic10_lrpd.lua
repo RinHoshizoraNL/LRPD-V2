@@ -542,27 +542,21 @@ VEHICLE.Equipment = {
 						Scale = 1
 					},
 					{
-						Model = "models/xenosprops/jp_plate/jp_plate.mdl",
+						Model = "models/xenosprops/na_plate/na_plate_gov.mdl",
 						Position = Vector( 0, -124.55, 36.2 ),
 						Angles = Angle( -11, 270, 00 ),
-						Scale = 0.89,
-						BodyGroups = {
-							["rear_seal"] = 0,
-						},
+						Scale = 1,
 						SubMaterials = {
-							[0] = "rin/lrpd2/props/plate_police",
+							[1] = "rin/lrpd2/props/plate_police",
 						},
 					},
 					{
-						Model = "models/xenosprops/jp_plate/jp_plate.mdl",
-						Position = Vector( 0, 118.9, 18.2 ),
+						Model = "models/xenosprops/na_plate/na_plate_gov.mdl",
+						Position = Vector( 0, 118.8, 18.2 ),
 						Angles = Angle( 6.5, 90, 0 ),
-						Scale = 0.89,
-						BodyGroups = {
-							["rear_seal"] = 0,
-						},
+						Scale = 0.97,
 						SubMaterials = {
-							[0] = "rin/lrpd2/props/plate_police",
+							[1] = "rin/lrpd2/props/plate_police",
 						},
 					},
 				}

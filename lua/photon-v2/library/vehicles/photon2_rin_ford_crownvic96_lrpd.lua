@@ -49,20 +49,23 @@ VEHICLE.Equipment = {
 		Category = "Lightbar",
 		Options = {
             {
-				Option = "FedSig Jetstream",
+				Option = "Patlite AJS-12",
 				Components = {
 					{
-						Name = "@jetsream",
-						Component = "fedsig_jetstream",
-						Position = Vector( 0, -18.5, 66.1 ),
-						Angles = Angle( 0, 180, 0 ),
-						Scale = 1.04,
+                        Component = "patlite_ajs12",
+                        Position = Vector( 0, -19, 73.5 ),
+                        Angles = Angle( -1, -90, 0 ),
+                        Scale = 1.1,
+						StateMap = "[B] 4 5 8 9 10 14 15 19 20",
+                        Options = {
+                            FeetWidthOffset = 4,
+                            FeetTilt = -4,
+                        },
 						SubMaterials = {
-						[3] = "rin/lrpd2/props/jetstream"
+							[2] = "sentry/props/koitoflasher/glass_blue",
 						},
-						StateMap = "[~B] 1 4 9 13 15 17 18 19 20 21 [~SW] 2 3 12 14 16 22 23 [R] 5 [A] 6 [ROT] 7 8 10 11 [Sweep] 9",
-					}
-				},
+                    },
+				}
 			},
 
 		}

@@ -278,70 +278,12 @@ VEHICLE.Equipment = {
 				Option = "Federal Signal Legend",
 				Components = {
 					{
-						Component = "photon_fedsig_legend",
+						Component = "photon_fedsig_legend_lrpd",
 						Position = Vector( 0, -19, 70.5 ),
 						Angles = Angle( 0, 90, 0 ),
 						Scale = 0.85,
-						StateMap = "[B] 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 25 26 [R] 23 [A] 24 ",
 						SubMaterials = {
 						[6] = "schmal/photon/fedsig_legend/dome_r"
-						},
-						Segments = {
-							Inner = {
-								Frames = {
-								    [1] = "1 2 25 26", --outer 
-									[2] = "3 4 23 24", --middle 
-									[3] = "1 2 3 4 23 24 25 26", --all 
-									[4] = "4 23 24",
-									[5] = "3 25 26",
-								},
-								Sequences = {
-									["RESPONSE"] = { 1, 1, 3, 2, 2, 0, 1, 1, 0, 0 },
-									["CRUISE"] = { 4, 4, 4, 4, 5, 5, 5, 5 },
-									["WARN"] = sequence():QuadFlash( 3, 0 ),
-								}
-							},
-							Corner = {
-		                        Frames = {
-			                        [1] = "6 7 9 11 13 15 17 19 22",
-			                        [2] = "5 8 10 12 14 16 18 20 21",
-									[3] = "5 8 10 12 14 16 18 20 21 24 25",
-									[4] = "6 7 9 11 13 15 17 19 22 23 26",
-									[5] = "5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26",
-		                        },
-		                        Sequences = {
-			                        ["RESPONSE"] = sequence():QuadFlash( 1, 2 ),
-									["CRUISE"] = { 3, 3, 3, 3, 4, 4, 4, 4 },
-									["WARN"] = sequence():QuadFlash( 0, 5 ),
-		                        }
-	                        },
-						},
-						Inputs = {
-							["Emergency.Warning"] = {
-								["MODE1"] = {
-									Inner = "CRUISE",
-									Corner = "CRUISE",
-								},
-								["MODE2"] = {
-									Inner = "WARN",
-									Corner = "WARN",
-								},
-								["MODE3"] = {
-									Inner = "RESPONSE",
-									Corner = "RESPONSE",
-								}
-							},
-							["Emergency.Directional"] = {
-								["LEFT"] = {},
-								["RIGHT"] = {},
-								["CENOUT"] = {},
-							},
-							["Vehicle.Transmission"] = {
-		                        ["PARK"] = {
-			                        Inner = "CRUISE",
-									Corner = "CRUISE",
-		                        },
-	                        },
 						},
 					},
 				}

@@ -196,7 +196,7 @@ VEHICLE.Equipment = {
 				Components = {
 					{
 						Name = "@pushbar_laf150",  --LEFT FRONT FLASHER
-						Component = "oss_laf150",
+						Component = "oss_laf150_lrpd",
 						Position = Vector( -10, 120.5, 28.7 ),
 						BodyGroups = {
 							["bracket"] = 0,
@@ -205,39 +205,8 @@ VEHICLE.Equipment = {
 						Angles = Angle( 0, 0, 0 ),
 						Scale = 0.8,
 						SubMaterials = {
-							[1] = "sentry/props/koitoflasher/glass_blue",
-							[2] = "sentry/props/koitoflasher/glass_blue"
-						},
-						StateMap = "[B] 1 2 3 4",
-						Segments = {
-							Light = {
-								Frames = {
-								    [1] = "1 2 3 4", 
-								},
-								Sequences = {
-									["QUAD_FLASH"] = sequence():QuadFlash( 1, 0 ),
-									["DOUBLE_FLASH"] = sequence():DoubleFlash( 1, 0 ),
-									["SCENE"] = { 1, 1, 1, 1, 0, 0, 0, 0 },
-								}
-							},
-						},
-						Inputs = {
-							["Emergency.Warning"] = {
-								["MODE1"] = {
-									Light = "SCENE",
-								},
-								["MODE2"] = {
-									Light = "DOUBLE_FLASH",
-								},
-								["MODE3"] = {
-									Light = "QUAD_FLASH",
-								}
-							},
-							["Vehicle.Transmission"] = {
-		                        ["PARK"] = {
-			                        Light = "SCENE",
-		                        },
-	                        },
+							[1] = "schmal/photon/fedsig_legend/dome_r",
+							[2] = "schmal/photon/fedsig_legend/dome_r"
 						},
 					},
 					{

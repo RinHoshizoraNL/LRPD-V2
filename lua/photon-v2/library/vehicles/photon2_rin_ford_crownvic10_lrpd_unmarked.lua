@@ -310,54 +310,24 @@ VEHICLE.Equipment = {
 				Option = "FS Xstream", --TEMPORARY ONLY, WILL REPLACE WITH LP3 OR LP5's 
 				Components = {
 					{
-						Name = "@xtream_grille",
-						Component = "photon_fedsig_xstream_single",
-						Position = Vector( -8.5, 108, 31.5 ),
-						Angles = Angle( 0, 93, 178.5 ),
-						Scale = 1,
-						StateMap = "[B] 1",
-						BodyGroups = {
-							["shroud"] = 1,
-							["mount"] = 2,
-						},
-						RenderGroup = RENDERGROUP_OPAQUE,
-						Segments = {
-							Light = {
-								Frames = {
-								    [1] = "1", 
-								},
-								Sequences = {
-									["QUAD_FLASH"] = sequence():QuadFlash( 1, 0 ),
-									["DOUBLE_FLASH"] = sequence():DoubleFlash( 1, 0 ),
-									["SCENE"] = { 1, 1, 1, 1, 0, 0, 0, 0 },
-								}
-							},
-						},
-						Inputs = {
-							["Emergency.Warning"] = {
-								["MODE1"] = {
-									Light = "SCENE",
-								},
-								["MODE2"] = {
-									Light = "DOUBLE_FLASH",
-								},
-								["MODE3"] = {
-									Light = "QUAD_FLASH",
-								}
-							},
-							["Vehicle.Transmission"] = {
-		                        ["PARK"] = {
-			                        Light = "SCENE",
-		                        },
-	                        },
+						Component = "photon_patlite_lp5_lrpd",
+						Position = Vector( 11, 108.5, 31.65 ),
+						Angles = Angle( 1.5, -4, 0 ),
+						Scale = 0.9,
+						SubMaterials = {
+							[5] = "schmal/photon/fedsig_legend/dome_r"
 						},
 					},
 					{
-						Inherit = "@xtream_grille",
-						Position = Vector( 8.5, 108, 31.5 ),
-						Angles = Angle( 0, 87, 182.5 ),
+						Component = "photon_patlite_lp5_lrpd",
+						Position = Vector( -11, 108.5, 31.65 ),
+						Angles = Angle( -1.5, 4, 0 ),
+						Scale = 0.9,
 						Phase = 180,
-					}
+						SubMaterials = {
+							[5] = "schmal/photon/fedsig_legend/dome_r"
+						},
+					},
 				},
 			},
 

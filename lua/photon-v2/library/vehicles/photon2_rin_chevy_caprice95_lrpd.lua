@@ -131,22 +131,23 @@ VEHICLE.Equipment = {
 				},
 				Components = {
 					{
-						Name = "@pushbar_koito_flasher",
-						Component = "koito_flasher",
+						Component = "koito_flasher_lrpd",
 						Position = Vector( 10, 117.7, 22.2 ),
 						Angles = Angle( 0, 0, 0 ),
 						Scale = 0.9,
-						StateMap = "[B] 1",
 						SubMaterials = {
-							[3] = "sentry/props/koitoflasher/glass_blue"
+							[3] = "schmal/photon/fedsig_legend/dome_r"
 						},
 					},
 					{
-						Inherit = "@pushbar_koito_flasher",
+						Component = "koito_flasher_lrpd",
 						Position = Vector( -10, 117.7, 22.2 ),
 						Angles = Angle( 0, 0, 0 ),
 						Scale = 0.9,
-						Phase = 180,
+						Phase = 90,
+						SubMaterials = {
+							[3] = "schmal/photon/fedsig_legend/dome_r"
+						},
 					},
 				}
 			}

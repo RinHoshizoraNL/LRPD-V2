@@ -194,7 +194,12 @@ VEHICLE.Equipment = {
 						Position = Vector( -23, -12, 67.1 ),
 						Angles = Angle( -1.9, 270, 7.5 ),
 						Scale = .9,
-						StateMap = "[B] 3",
+						States = {
+							[1] = "B",
+							[2] = "B",
+							[3] = "B",
+							[4] = "B",
+						},
 						BodyGroups = {
 							["trim"] = 1,
 						},

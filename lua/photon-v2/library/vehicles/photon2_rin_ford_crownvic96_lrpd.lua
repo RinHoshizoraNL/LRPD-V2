@@ -49,6 +49,30 @@ VEHICLE.Equipment = {
 		Category = "Lightbar",
 		Options = {
             {
+				Option = "Patlite AXS-12",
+				Components = {
+					{
+                        Component = "patlite_axs12",
+                        Position = Vector( 0, -17, 70.25 ),
+                        Angles = Angle( -1, -90, 0 ),
+                        Scale = 1.2,
+						States = {
+							[1] = "B",
+							[2] = "B",
+							[3] = "B",
+							[4] = "B",
+						},
+                        Options = {
+                            FeetWidthOffset = 1,
+                            FeetTilt = -4,
+                        },
+						SubMaterials = {
+							[12] = "sentry/props/glass/blue"
+						},
+                    },
+				}
+			},
+			{
 				Option = "Patlite AJS-12",
 				Components = {
 					{
@@ -56,7 +80,12 @@ VEHICLE.Equipment = {
                         Position = Vector( 0, -19, 73.5 ),
                         Angles = Angle( -1, -90, 0 ),
                         Scale = 1.1,
-						StateMap = "[B] 4 5 8 9 10 14 15 19 20",
+						States = {
+							[1] = "B",
+							[2] = "B",
+							[3] = "B",
+							[4] = "B",
+						},
                         Options = {
                             FeetWidthOffset = 4,
                             FeetTilt = -4,

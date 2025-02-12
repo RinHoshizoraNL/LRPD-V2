@@ -237,67 +237,26 @@ VEHICLE.Equipment = {
 						Options = {
 							Width = 3,
 							Angle = 10
-						}
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
 					}
 				}
 			},
 		}
 	},
 	{
-		Category = "Rear Deck Lighting", --MAY REPLACE WITH DUO, NOT SURE YET
+		Category = "Rear Deck Lighting",
 		Options = {
             {
-				Option = "FS Xstream",
+				Option = "Signalmaster",
 				Components = {
 					{
-						Name = "@xtream_single",
-						Component = "photon_fedsig_xstream_single",
-						Position = Vector( -10, -78, 50.5 ),
-						Angles = Angle( 0, 270, 180 ),
+						Component = "photon_fedsig_cn_signalmaster",
+						Position = Vector( 0, -78, 52.4 ),
+						Angles = Angle( 0, 270, 0 ),
 						Scale = 1,
-						StateMap = "[B] 1",
-						BodyGroups = {
-							["shroud"] = 1,
-							["mount"] = 1,
-						},
 						RenderGroup = RENDERGROUP_OPAQUE,
-						Segments = {
-							Light = {
-								Frames = {
-								    [1] = "1", 
-								},
-								Sequences = {
-									["QUAD_FLASH"] = sequence():QuadFlash( 1, 0 ),
-									["DOUBLE_FLASH"] = sequence():DoubleFlash( 1, 0 ),
-									["SCENE"] = { 1, 1, 1, 1, 0, 0, 0, 0 },
-								}
-							},
-						},
-						Inputs = {
-							["Emergency.Warning"] = {
-								["MODE1"] = {
-									Light = "SCENE",
-								},
-								["MODE2"] = {
-									Light = "DOUBLE_FLASH",
-								},
-								["MODE3"] = {
-									Light = "QUAD_FLASH",
-								}
-							},
-							["Vehicle.Transmission"] = {
-		                        ["PARK"] = {
-			                        Light = "SCENE",
-		                        },
-	                        },
-						},
 					},
-					{
-						Inherit = "@xtream_single",
-						Position = Vector( 10, -78, 50.5 ),
-						Angles = Angle( 0, 270, 180 ),
-						Phase = 180,
-					}
 				},
 			},
 
@@ -307,7 +266,7 @@ VEHICLE.Equipment = {
 		Category = "Grille Lighting",
 		Options = {
             {
-				Option = "FS Xstream", --TEMPORARY ONLY, WILL REPLACE WITH LP3 OR LP5's 
+				Option = "FS Xstream",  
 				Components = {
 					{
 						Component = "photon_patlite_lp5_lrpd",
@@ -393,7 +352,8 @@ VEHICLE.Equipment = {
 						Model = "models/schmal/antenna_pod_navigator.mdl",
 						Position = Vector( 0, -105, 48.6),
 						Angles = Angle( -4.5, 90, 0 ),
-						Scale = 1
+						Scale = 1,
+						Color = Color(0, 0, 0)
 					},
 					{
 						Model = "models/xenosprops/na_plate/na_plate.mdl",

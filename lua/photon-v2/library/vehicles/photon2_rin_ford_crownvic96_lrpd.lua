@@ -224,7 +224,8 @@ VEHICLE.Equipment = {
 						Angles = Angle( 0, 0, 0 ),
 						Scale = 0.9,
 						SubMaterials = {
-							[3] = "schmal/photon/fedsig_legend/dome_r"
+							[3] = "schmal/photon/fedsig_legend/dome_r",
+							[0] = "sentry/props/koitoflasher/plastic_r",
 						},
 					},
 					{
@@ -236,6 +237,37 @@ VEHICLE.Equipment = {
 						SubMaterials = {
 							[3] = "schmal/photon/fedsig_legend/dome_r"
 						},
+					},
+				}
+			}
+		}
+	},
+	{
+		Category = "Rear Deck",
+		Options = {
+			{
+				Components = {
+					{
+						Component = "koito_flasher_lrpd",
+						Position = Vector( 14, -80, 50.2 ),
+						Angles = Angle( 0, 180, 0 ),
+						Scale = 0.9,
+						SubMaterials = {
+							[3] = "schmal/photon/fedsig_legend/dome_r",
+							[0] = "sentry/props/koitoflasher/plastic_r",
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Component = "koito_flasher_lrpd",
+						Position = Vector( -14, -80, 50.2 ),
+						Angles = Angle( 0, 180, 0 ),
+						Scale = 0.9,
+						Phase = 90,
+						SubMaterials = {
+							[3] = "schmal/photon/fedsig_legend/dome_r"
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 				}
 			}

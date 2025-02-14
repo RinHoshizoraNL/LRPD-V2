@@ -162,6 +162,37 @@ VEHICLE.Equipment = {
 		}
 	},
 	{
+		Category = "Rear Deck",
+		Options = {
+			{
+				Components = {
+					{
+						Component = "koito_flasher_lrpd",
+						Position = Vector( 15, -80, 44 ),
+						Angles = Angle( 0, 180, 0 ),
+						Scale = 0.9,
+						SubMaterials = {
+							[3] = "schmal/photon/fedsig_legend/dome_r",
+							[0] = "sentry/props/koitoflasher/plastic_r",
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Component = "koito_flasher_lrpd",
+						Position = Vector( -15, -80, 44 ),
+						Angles = Angle( 0, 180, 0 ),
+						Scale = 0.9,
+						Phase = 90,
+						SubMaterials = {
+							[3] = "schmal/photon/fedsig_legend/dome_r"
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+				}
+			}
+		}
+	},
+	{
 		Category = "Wheels",
 		Options = {
 			{

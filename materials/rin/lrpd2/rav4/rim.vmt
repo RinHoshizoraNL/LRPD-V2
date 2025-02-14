@@ -1,0 +1,32 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "rin/lrpd2/rav4/rim"
+	"$bumpmap" "dannio/shared/bumpmap"
+	"$normalmapalphaenvmapmask" 1
+	"$blendtintbybasealpha" "1"
+	"$nocull" "1"
+	"$nodecal" "1"
+   	$surfaceprop "metal"
+
+ 	$envmap "env_cubemap"
+    	$envmaptint "[ .3 .3 .3]"
+    	$envmapcontrast "1"
+    	$envmapsaturation "1"
+    	$envmapfresnel "1"
+
+    	$phong "1"
+    	$phongexponent "10"
+    	$phongboost "1"
+    	$phongfresnelranges "[ .7 .3 .01]"
+
+    	"$colorfix" "[1 1 1]"
+    	"Proxies"
+    	{
+       		 "Equals"
+       		 {
+           			 srcVar1 $colorfix
+          			 resultVar    $color
+       		 }
+    	}
+}
+

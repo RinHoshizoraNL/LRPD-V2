@@ -303,6 +303,17 @@ VEHICLE.Equipment = {
 					{ BodyGroup = "ions", Value = 1 },
 					{ BodyGroup = "dominator", Value = 1 },
 					{ BodyGroup = "keychain", Value = 0 },
+					{ BodyGroup = "partition", Value = 1 },
+				},
+				Components = {
+					{
+						Name = "Federal Signal MB1 Controller",
+						Component = "photon_fedsig_mb1_controller",
+						Position = Vector( 0, 12.1, 39 ),
+						Angles = Angle( 0, 0, 21 ),
+						Scale = 1,
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
 				},
 				Props = {
 					{
@@ -329,6 +340,41 @@ VEHICLE.Equipment = {
 						Position = Vector( 21.2, -70, 87.5),
 						Angles = Angle( -1, 90, 3.5 ),
 						Scale = 1
+					},
+					{
+						Model = "models/sentry/props/procopper_cvpi.mdl",
+						Position = Vector( 0, 8, 14),
+						Angles = Angle( 0, 0, 0 ),
+						Scale = 1,
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Model = "models/sentry/props/jp/oss_mkd1.mdl",
+						Position = Vector( -0.2, 18.05, 40.7 ),
+						Angles = Angle( -69, 270, 0 ),
+						Scale = 1,
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Model = "models/sentry/props/jp/necradio.mdl",
+						Position = Vector( -0.2, 20.8, 42 ),
+						Angles = Angle( -69, 270, 0 ),
+						Scale = 1.1,
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Model = "models/sentry/props/sap500.mdl",
+						Position = Vector( 0, 15.35, 40.1 ),
+						Angles = Angle( 0, 0, -69 ),
+						Scale = 1,
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Model = "models/sentry/props/jp/necmdt.mdl",
+						Position = Vector( 0, 27.7, 49 ),
+						Angles = Angle( -5, 270, 0 ),
+						Scale = 0.8,
+						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 					{
 						Model = "models/xenosprops/na_plate/na_plate_gov.mdl",

@@ -43,6 +43,12 @@ VEHICLE.Equipment = {
 					{ Id = 4, Material = "rin/lrpd2/charger15/supervisor" }
 				},
 			},
+			{
+				Option = "Battenburg Test Car",
+				SubMaterials = {
+					{ Id = 4, Material = "rin/lrpd2/charger15/battenburg" }
+				},
+			},
 		}
 	},
 	{
